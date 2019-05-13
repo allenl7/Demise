@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qen-hb-oqB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="735-bw-Wfd">
+            <objects>
+                <viewController id="Qen-hb-oqB" customClass="WelcomeViewController" customModule="Demise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHM-gZ-yyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-3r-xe4">
+                                <rect key="frame" x="115.5" y="65" width="145" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enable Notifications. Afterwards, you will recieve five notifications, daily at random times." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2n-Cs-bFe">
+                                <rect key="frame" x="57" y="184" width="262.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSB-hB-KqC">
+                                <rect key="frame" x="37" y="281.5" width="300" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YdA-Td-4Dv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq8-v6-JNp">
+                                <rect key="frame" x="0.0" y="357.5" width="375" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Enable Notifications">
+                                    <color key="titleColor" red="0.14901960780000001" green="0.40784313729999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enableNotificationButtonTapped:" destination="Qen-hb-oqB" eventType="touchUpInside" id="ub4-DA-Bkt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235289999995" green="0.1176470588" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jSB-hB-KqC" firstAttribute="centerX" secondItem="FBn-3D-loS" secondAttribute="centerX" id="2HM-wU-sLA"/>
+                            <constraint firstItem="E2n-Cs-bFe" firstAttribute="top" secondItem="rH4-3r-xe4" secondAttribute="bottom" constant="65" id="4cw-dA-lfN"/>
+                            <constraint firstItem="hq8-v6-JNp" firstAttribute="centerX" secondItem="FBn-3D-loS" secondAttribute="centerX" id="8SX-mV-32b"/>
+                            <constraint firstItem="rH4-3r-xe4" firstAttribute="top" secondItem="FBn-3D-loS" secondAttribute="top" constant="45" id="CnC-Bu-sPS"/>
+                            <constraint firstItem="jSB-hB-KqC" firstAttribute="width" secondItem="eHM-gZ-yyZ" secondAttribute="width" multiplier="0.8" id="HzT-i5-jqC"/>
+                            <constraint firstItem="jSB-hB-KqC" firstAttribute="top" secondItem="E2n-Cs-bFe" secondAttribute="bottom" constant="40" id="K01-oj-mR0"/>
+                            <constraint firstItem="hq8-v6-JNp" firstAttribute="centerY" secondItem="FBn-3D-loS" secondAttribute="centerY" constant="35" id="agh-xm-Zdo"/>
+                            <constraint firstItem="E2n-Cs-bFe" firstAttribute="width" secondItem="eHM-gZ-yyZ" secondAttribute="width" multiplier="0.7" id="iKr-G7-eCN"/>
+                            <constraint firstItem="hq8-v6-JNp" firstAttribute="width" secondItem="eHM-gZ-yyZ" secondAttribute="width" id="jxe-LH-dLU"/>
+                            <constraint firstItem="rH4-3r-xe4" firstAttribute="centerX" secondItem="FBn-3D-loS" secondAttribute="centerX" id="mOL-t0-R0R"/>
+                            <constraint firstItem="E2n-Cs-bFe" firstAttribute="centerX" secondItem="FBn-3D-loS" secondAttribute="centerX" id="wtg-Zm-Xo3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FBn-3D-loS"/>
+                    </view>
+                    <connections>
+                        <outlet property="enableNotificationButton" destination="hq8-v6-JNp" id="E5e-6s-0g2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uim-a8-uBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="-550.07496251874068"/>
+        </scene>
+    </scenes>
+</document>
