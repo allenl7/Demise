@@ -8,7 +8,7 @@ https://itunes.apple.com/us/app/demise-inspirational-quotes/id1342042993?mt=8
 
 ### Screenshots
 
-![images](Images/1.jpeg){:height="36px" width="36px"}
+![images](Images/1.jpeg){:height="50%" width="50%"}
 ![images](Images/2.jpeg =250x250)
 ![images](Images/3.JPG =250x250)
 
